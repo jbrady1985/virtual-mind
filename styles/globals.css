@@ -1,2 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #000000;
+  --fg: #ffffff;
+  --gold: #d4af37;
+  --panel: #1a1a1a;
+}
+
 html, body, #__next { height: 100%; }
-* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); }
