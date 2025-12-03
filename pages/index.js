@@ -6,30 +6,42 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Nav */}
       <header className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold">
-          <span className="text-gold">Virtual</span>-Mind
+        <Link href="/" legacyBehavior>
+          <a className="text-2xl font-bold">
+            <span className="text-gold">Virtual</span>-Mind
+          </a>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6 text-sm opacity-90">
           <a href="#how" className="hover:text-gold">How it works</a>
           <a href="#features" className="hover:text-gold">Features</a>
-          <Link href="/pricing" className="hover:text-gold">Pricing</Link>
+          <Link href="/pricing" legacyBehavior>
+            <a className="hover:text-gold">Pricing</a>
+          </Link>
           <a href="#faq" className="hover:text-gold">FAQ</a>
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link href="/pricing" className="px-4 py-2 rounded-2xl border border-neutral-700 hover:border-gold transition">
-            Sign in
+          <Link href="/pricing" legacyBehavior>
+            <a className="px-4 py-2 rounded-2xl border border-neutral-700 hover:border-gold transition">
+              Sign in
+            </a>
           </Link>
-          <Link href="/pricing" className="px-4 py-2 rounded-2xl bg-gold text-black font-semibold hover:opacity-90 transition">
-            Create yours
+          <Link href="/pricing" legacyBehavior>
+            <a className="px-4 py-2 rounded-2xl bg-gold text-black font-semibold hover:opacity-90 transition">
+              Create yours
+            </a>
           </Link>
-          {/* Quick-access to policy/help pages */}
-          <Link href="/refund" className="px-4 py-2 rounded-2xl border border-neutral-700 hover:border-gold transition hidden md:inline-block">
-            Refunds
+          {/* Quick-access buttons */}
+          <Link href="/refund" legacyBehavior>
+            <a className="px-4 py-2 rounded-2xl border border-neutral-700 hover:border-gold transition hidden md:inline-block">
+              Refunds
+            </a>
           </Link>
-          <Link href="/contact" className="px-4 py-2 rounded-2xl bg-gold text-black font-semibold hover:opacity-90 transition hidden md:inline-block">
-            Contact
+          <Link href="/contact" legacyBehavior>
+            <a className="px-4 py-2 rounded-2xl bg-gold text-black font-semibold hover:opacity-90 transition hidden md:inline-block">
+              Contact
+            </a>
           </Link>
         </div>
       </header>
@@ -45,8 +57,10 @@ export default function Home() {
               Answer a psychology-backed quiz. We generate a persona config and host your personal decision-mirroring AI in the cloud.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <Link href="/pricing" className="px-5 py-3 rounded-2xl bg-gold text-black font-semibold hover:opacity-90 transition">
-                Create your virtual mind
+              <Link href="/pricing" legacyBehavior>
+                <a className="px-5 py-3 rounded-2xl bg-gold text-black font-semibold hover:opacity-90 transition">
+                  Create your virtual mind
+                </a>
               </Link>
               <a href="#how" className="px-5 py-3 rounded-2xl border border-neutral-700 hover:border-gold transition">
                 See how it works
@@ -133,10 +147,18 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-8 text-sm opacity-70 flex justify-between flex-wrap gap-3">
           <span>© {new Date().getFullYear()} Virtual-Mind</span>
           <div className="flex gap-4">
-            <Link href="/privacy" className="hover:text-gold">Privacy</Link>
-            <Link href="/terms" className="hover:text-gold">Terms</Link>
-            <Link href="/refund" className="hover:text-gold">Refunds</Link>
-            <Link href="/contact" className="hover:text-gold">Contact</Link>
+            <Link href="/privacy" legacyBehavior>
+              <a className="hover:text-gold">Privacy</a>
+            </Link>
+            <Link href="/terms" legacyBehavior>
+              <a className="hover:text-gold">Terms</a>
+            </Link>
+            <Link href="/refund" legacyBehavior>
+              <a className="hover:text-gold">Refunds</a>
+            </Link>
+            <Link href="/contact" legacyBehavior>
+              <a className="hover:text-gold">Contact</a>
+            </Link>
           </div>
         </div>
       </footer>
