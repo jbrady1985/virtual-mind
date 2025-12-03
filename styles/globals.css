@@ -1,13 +1,9 @@
+/* styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --bg: #000000;
-  --fg: #ffffff;
-  --gold: #d4af37;
-  --panel: #1a1a1a;
-}
-
-html, body, #__next { height: 100%; }
-body { background: var(--bg); color: var(--fg); }
+/* simple utility fallbacks */
+.text-gold { color: #d4af37; }
+.bg-panel { background-color: #0f0f0f; }
+.shadow-card { box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
