@@ -13,7 +13,7 @@ export default function Home() {
           <a href="#faq" className="hover:text-gold">FAQ</a>
         </nav>
         <div className="flex items-center gap-3">
-          <a href="#" className="px-4 py-2 rounded-2xl border border-neutral-700 hover:border-gold transition">Sign in</a>
+          <a href="/pricing" className="px-4 py-2 rounded-2xl border border-neutral-700 hover:border-gold transition">Sign in</a>
           <a href="/pricing" className="px-4 py-2 rounded-2xl bg-gold text-black font-semibold hover:opacity-90 transition">Create yours</a>
         </div>
       </header>
@@ -109,11 +109,12 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-neutral-900 mt-10">
-        <div className="max-w-6xl mx-auto px-6 py-8 text-sm opacity-70 flex justify-between">
+        <div className="max-w-6xl mx-auto px-6 py-8 text-sm opacity-70 flex justify-between flex-wrap gap-3">
           <span>© {new Date().getFullYear()} Virtual-Mind</span>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-gold">Privacy</a>
-            <a href="#" className="hover:text-gold">Terms</a>
+            <a href="/privacy" className="hover:text-gold">Privacy</a>
+            <a href="/refund" className="hover:text-gold">Refunds</a>
+            <a href="/contact" className="hover:text-gold">Contact</a>
           </div>
         </div>
       </footer>
