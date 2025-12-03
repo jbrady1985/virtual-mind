@@ -3,7 +3,7 @@ import Stripe from "stripe";
 import getRawBody from "raw-body";
 
 export const config = {
-  api: { bodyParser: false }, // Stripe needs the raw body for signature verification
+  api: { bodyParser: false }, // raw body needed for Stripe signature verification
 };
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
