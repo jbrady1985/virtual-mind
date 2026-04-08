@@ -7,11 +7,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@auth/supabase-adapter": "^1.11.1",
+    "@supabase/supabase-js": "^2.101.0",
+    "ai": "^6.0.141",
+    "bcryptjs": "^3.0.3",
     "next": "14.2.5",
+    "next-auth": "^4.24.13",
+    "openai": "^6.33.0",
+    "raw-body": "2.5.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "stripe": "16.10.0",
-    "raw-body": "2.5.2"
+    "stripe": "16.10.0"
   },
   "devDependencies": {
     "autoprefixer": "10.4.20",
